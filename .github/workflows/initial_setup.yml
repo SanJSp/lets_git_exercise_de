@@ -27,4 +27,4 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         # The name of the file to use as the issue template
-        filename: .github/ISSUE_TEMPLATE/ 	aufgabe-1-template.md
+        filename: .github/ISSUE_TEMPLATE/aufgabe-1-template.md
