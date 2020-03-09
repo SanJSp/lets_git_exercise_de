@@ -28,4 +28,3 @@ jobs:
       with:
         # The name of the file to use as the issue template
         filename: .github/ISSUE_TEMPLATE/aufgabe-1-template.md
-        assignees: ${{GITHUB_ACTOR}}
