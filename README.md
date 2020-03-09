@@ -1,4 +1,4 @@
-# let's Git - Versionsverwaltung & Open Source Homework
+# Let's Git - Versionsverwaltung & Open Source Homework
 Welcome to this homework for our MOOC. We hope you will have fun and learn a lot. 
 
 In this homework you will create a website on your favorite movie/book character! To start this excercise simply follow these steps:
