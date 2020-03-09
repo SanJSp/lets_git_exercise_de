@@ -6,7 +6,7 @@ name: issue4_test
 on:
   push:
     branches: 
-      - feature4_quote 
+    - feature4_quote 
 
 jobs:
   build:
