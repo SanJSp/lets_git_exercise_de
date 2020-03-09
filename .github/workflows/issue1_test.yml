@@ -4,9 +4,11 @@
 name: issue1_test
 
 on:
-  push:
+  pull_request:
     branches: #feature1_new_title
       - schTi-update-workflows
+    types: 
+      - unassigned
 
 jobs:
   build:
