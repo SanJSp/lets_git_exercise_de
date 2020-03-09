@@ -35,4 +35,25 @@ jobs:
       with:
         # The name of the file to use as the issue template
         filename: .github/ISSUE_TEMPLATE/issue2.md    
-   
+    - name: Create an issue3
+      uses: JasonEtco/create-an-issue@v2.3.1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        # The name of the file to use as the issue template
+        filename: .github/ISSUE_TEMPLATE/issue3.md    
+    - name: Create an issue4
+      uses: JasonEtco/create-an-issue@v2.3.1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        # The name of the file to use as the issue template
+        filename: .github/ISSUE_TEMPLATE/issue4.md    
+    - name: Create an issue5
+      uses: JasonEtco/create-an-issue@v2.3.1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        # The name of the file to use as the issue template
+        filename: .github/ISSUE_TEMPLATE/issue5.md    
+
