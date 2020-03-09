@@ -1,7 +1,6 @@
 name: Greetings
 
-on: [pull_request, issues]
-
+on: [ fork ]
 jobs:
   greeting:
     runs-on: ubuntu-latest
