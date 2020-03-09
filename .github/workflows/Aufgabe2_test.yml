@@ -5,9 +5,9 @@ name: Aufgabe2_test
 
 on:
   push:
-    branches: [ master ]
+    branches: [ feature2_short_description ]
   pull_request:
-    branches: [ master ]
+    branches: [ feature2_short_description ]
 
 jobs:
   build:
