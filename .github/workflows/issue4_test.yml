@@ -4,8 +4,9 @@
 name: issue4_test
 
 on:
-  pull_request:
-    branches: [ feature4_quote ]
+  push:
+    branches: 
+      - feature4_quote 
 
 jobs:
   build:
@@ -24,5 +25,29 @@ jobs:
       - run: echo ::set-output name=result::$(grep "Yes" test-output.txt | wc -l)
         id: test
         shell: bash
+      - run: echo ::set-output name=comment::$(< ./fail.md)
+        id: fail
+        shell: bash
+        working-directory: ./.github/COMMENT_TEMPLATES
+      - run: echo ::set-output name=comment::$(< ./success.md)
+        id: success
+        shell: bash
+        working-directory: ./.github/COMMENT_TEMPLATES
+      - name: PR Comment Fail
+        uses: Janealter/branch-pr-comment@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          message:  ${{ steps.fail.outputs.comment }}
+          branch: feature4_quote
+        if: steps.test.outputs.result != '1'
+      - name: PR Comment Success
+        uses: Janealter/branch-pr-comment@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          message:  ${{ steps.success.outputs.comment }}
+          branch: feature4_quote
+        if: steps.test.outputs.result == '1'
       - run: exit 1
         if: steps.test.outputs.result != '1'
