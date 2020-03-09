@@ -25,12 +25,11 @@ jobs:
         id: test
         shell: bash
       - name: PR Comment
-        uses: mshick/add-pr-comment@v1
+        uses: harupy/comment-on-pr@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          message: |
-            The tests were not successful. Just have a look at your changes, maybe you can find the mistake. Commit if you think you fixed it. Keep it up 🔥.
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
-          allow-repeats: true
+          filename: template.md
         if: steps.test.outputs.result != '1'
       - run: exit 1
         if: steps.test.outputs.result != '1'
