@@ -1,13 +1,12 @@
 # This workflow will install Python dependencies, run tests and lint with a single version of Python
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
 
-name: Aufgabe5_test
+name: issue5_test
 
 on:
-  push:
-    branches: [ feature5_image ]
   pull_request:
-    branches: [ feature5_image ]
+    branches: 
+      - feature5_image
 
 jobs:
   build:
@@ -26,5 +25,29 @@ jobs:
       - run: echo ::set-output name=result::$(grep "Yes" test-output.txt | wc -l)
         id: test
         shell: bash
+      - run: echo ::set-output name=comment::$(< ./fail.md)
+        id: fail
+        shell: bash
+        working-directory: ./.github/COMMENT_TEMPLATES
+      - run: echo ::set-output name=comment::$(< ./lastSuccess.md)
+        id: success
+        shell: bash
+        working-directory: ./.github/COMMENT_TEMPLATES
+      - name: PR Comment Fail
+        uses: Janealter/branch-pr-comment@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          message:  ${{ steps.fail.outputs.comment }}
+          branch: feature5_image
+        if: steps.test.outputs.result != '1'
+      - name: PR Comment Success
+        uses: Janealter/branch-pr-comment@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          message:  ${{ steps.success.outputs.comment }}
+          branch: feature5_image
+        if: steps.test.outputs.result == '1'
       - run: exit 1
         if: steps.test.outputs.result != '1'
