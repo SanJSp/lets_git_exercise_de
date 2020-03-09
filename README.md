@@ -9,4 +9,4 @@ In this homework you will create a website on your favorite movie/book character
 - [ ] Set the online repository to your origin master (git remote add origin [link] -> confirm with git remote -v)
 - [ ] Complete the issues on the repository site on github
 
-
+When you have set up your website, then you will be able to see the content on \<your github username.github.io\>. If you want to see the changes that you've made on your feature branch, check out the index.md file in your repository on your branch.
