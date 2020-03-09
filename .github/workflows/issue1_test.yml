@@ -27,16 +27,12 @@ jobs:
       - run: echo ::set-output name=result::$(grep "Yes" test-output.txt | wc -l)
         id: test
         shell: bash
-      - run: echo ::set-output name=comment::$($(<fail.md))
-        id: fail
-        shell: bash
-        working-directory: ./github/COMMENT_TEMPLATES
       - name: PR Comment
         uses: Janealter/branch-pr-comment@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          message:  ${{ steps.fail.outputs.comment }}
+          message:  ${{ steps.test.outputs.result }}
           branch: schTi-update-workflows
         if: steps.test.outputs.result != '1'
       - run: exit 1
