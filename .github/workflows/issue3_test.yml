@@ -6,7 +6,7 @@ name: issue3_test
 on:
   push:
     branches: 
-    - feature3_character_traits 
+      - feature3_character_traits 
 
 jobs:
   build:
