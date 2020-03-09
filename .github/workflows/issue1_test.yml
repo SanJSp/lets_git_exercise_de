@@ -4,7 +4,7 @@
 name: issue1_test
 
 on:
-  pull_request:
+  push:
     branches: #feature1_new_title
       - schTi-update-workflows
 
@@ -17,6 +17,8 @@ jobs:
     name: Python ${{ matrix.python-version }} sample
     steps:
       - uses: actions/checkout@v2
+        with:
+          ref: schTi-update-workflows 
       - uses: actions/setup-python@v1
         with:
           python-version: '3.x' # Version range or exact version of a Python version to use, using SemVer's version range syntax
@@ -30,6 +32,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
+          ref: schTi-update-workflows
           filename: ./github/COMMENT_TEMPLATES/fail.md
         if: steps.test.outputs.result != '1'
       - run: exit 1
