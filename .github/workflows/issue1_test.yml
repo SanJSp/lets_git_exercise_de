@@ -27,7 +27,7 @@ jobs:
       - run: echo ::set-output name=result::$(grep "Yes" test-output.txt | wc -l)
         id: test
         shell: bash
-      - run: echo ::set-output name=comment::$(<./fail.md)
+      - run: echo ::set-output name=comment::$($(<fail.md))
         id: fail
         shell: bash
         working-directory: ./github/COMMENT_TEMPLATES
