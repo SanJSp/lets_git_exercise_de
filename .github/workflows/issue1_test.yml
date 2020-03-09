@@ -5,7 +5,7 @@ name: issue1_test
 
 on:
   pull_request:
-    branches: [ feature1_new_title ]
+    branches: [ schTi-update-workflows ] #feature1_new_title
 
 jobs:
   build:
@@ -24,5 +24,13 @@ jobs:
       - run: echo ::set-output name=result::$(grep "Yes" test-output.txt | wc -l)
         id: test
         shell: bash
+      - name: PR Comment
+        uses: mshick/add-pr-comment@v1
+        with:
+          message: |
+            The tests were not successful. Just have a look at your changes, maybe you can find the mistake. Commit if you think you fixed it. Keep it up 🔥.
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          allow-repeats: true
+        if: steps.test.outputs.result != '1'
       - run: exit 1
         if: steps.test.outputs.result != '1'
