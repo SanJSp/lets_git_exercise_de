@@ -5,8 +5,8 @@ name: issue1_test
 
 on:
   push:
-    branches: #feature1_new_title
-      - schTi-update-workflows
+    branches:
+      - feature1_new_title
 
 jobs:
   build:
@@ -17,8 +17,6 @@ jobs:
     name: Python ${{ matrix.python-version }} sample
     steps:
       - uses: actions/checkout@v2
-        with:
-          ref: schTi-update-workflows 
       - uses: actions/setup-python@v1
         with:
           python-version: '3.x' # Version range or exact version of a Python version to use, using SemVer's version range syntax
@@ -27,7 +25,7 @@ jobs:
       - run: echo ::set-output name=result::$(grep "Yes" test-output.txt | wc -l)
         id: test
         shell: bash
-      - run: echo ::set-output name=comment::$(< ./success.md)
+      - run: echo ::set-output name=comment::$(< ./fail.md)
         id: fail
         shell: bash
         working-directory: ./.github/COMMENT_TEMPLATES
@@ -35,20 +33,20 @@ jobs:
         id: success
         shell: bash
         working-directory: ./.github/COMMENT_TEMPLATES
-      - name: PR Comment
+      - name: PR Comment Fail
         uses: Janealter/branch-pr-comment@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           message:  ${{ steps.fail.outputs.comment }}
-          branch: schTi-update-workflows
+          branch: feature1_new_title
         if: steps.test.outputs.result != '1'
-      - name: PR Comment
+      - name: PR Comment Success
         uses: Janealter/branch-pr-comment@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          message:  ${{ steps.fail.outputs.comment }}
+          message:  ${{ steps.success.outputs.comment }}
           branch: schTi-update-workflows
         if: steps.test.outputs.result == '1'
       - run: exit 1
