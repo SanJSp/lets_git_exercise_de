@@ -3,7 +3,7 @@ name: Aufgabe 1 Template
 about: Das erste Issue, welches Aufgabe 1 abbildet.
 title: Please add website title
 labels: enhancement, good first issue
-assignees: ${{GITHUB_ACTOR}}
+assignees: '${{GITHUB_ACTOR}}'
 
 ---
 
