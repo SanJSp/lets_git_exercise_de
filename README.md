@@ -1,12 +1,12 @@
-# Let's Git - Versionsverwaltung & Open Source Homework
-Welcome to this homework for our MOOC. We hope you will have fun and learn a lot. 
+# Let's Git - Versionsverwaltung & Open Source Hausaufgabe
+Herzlich Willkommen zu dieser Hausaufgabe für unseren MOOC: Let's Git! Wir hoffen, dass Du viel lernen wirst und dabei auch Spaß hast.
 
-In this homework you will create a website on your favorite movie/book character! To start this excercise simply follow these steps:
+In dieser Hausaufgabe wirst du eine Webseite zu deinem Lieblingscharakter aus Filmen oder Büchern erstellen. Um die Aufgabe zu starten, folge einfach folgenden Schritten:
 
-- [ ] Fork this repository and open it in your browser
-- [ ] Go to settings>rename repository and name it \<your github username.github.io\>. For example, if your username was sanjsp, the name of the repository should be sanjsp.github.io
-- [ ] Clone the repository to your computer
-- [ ] Set the online repository to your origin master (git remote add origin [link] -> confirm with git remote -v)
-- [ ] Complete the issues on the repository site on github
+- [ ] Forke dieses Repository und öffne es in deinem Browser
+- [ ] Gehe unter Settings zu "Rename Repository" und benenne es in \<dein github name\>.github.io um. Wenn dein Username zum Beispiel sanjsp ist, sollte das Repository sanjsp.github.io heißen
+- [ ] Clone das Repository auf deinen Computer (wie du es in Woche 1 gelernt hast)
+- [ ] Setze das remote repository auf den master (git remote add origin [link] -> bestätigen mit git remote -v) 
+- [ ] Vervollständige die Issues auf der Repository Seite auf github
 
-When you have set up your website, then you will be able to see the content on \<your github username.github.io\>. If you want to see the changes that you've made on your feature branch, check out the index.md file in your repository on your branch. The website will always only display the version on your master branch, therefore changes on any other branch won't be visible on the website!
+Wenn du deine Webseite aufgesetzt hast, kannst du sie unter \<dein github username\>.github.io ansehen. Wenn du die Veränderungen anschauen möchtest, die du auf deinem feature-Branch erstellt hast, schau dir die index.md Datei in deinem Repository auf deinem Branch an. Die Webseite wird immer nur die Version vom master-Branch anzweigen, weshalb Veränderungen auf anderen Branches auf der Webseite nicht sichtbar sind.
