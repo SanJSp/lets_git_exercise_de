@@ -4,8 +4,6 @@
 name: issue2_test
 
 on:
-  push:
-    branches: [ feature2_short_description ]
   pull_request:
     branches: [ feature2_short_description ]
 
