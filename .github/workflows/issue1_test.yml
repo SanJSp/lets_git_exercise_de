@@ -4,7 +4,7 @@
 name: issue1_test
 
 on:
-  push:
+  pull_request:
     branches: [ schTi-update-workflows ] #feature1_new_title
 
 jobs:
@@ -29,7 +29,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          filename: template.md
+          filename: ./github/COMMENT_TEMPLATES/fail.md
         if: steps.test.outputs.result != '1'
       - run: exit 1
         if: steps.test.outputs.result != '1'
