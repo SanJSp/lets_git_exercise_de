@@ -47,7 +47,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           message:  ${{ steps.success.outputs.comment }}
-          branch: schTi-update-workflows
+          branch: feature1_new_title
         if: steps.test.outputs.result == '1'
       - run: exit 1
         if: steps.test.outputs.result != '1'
