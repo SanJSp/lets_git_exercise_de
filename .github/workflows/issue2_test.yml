@@ -6,7 +6,7 @@ name: issue2_test
 on:
   push:
     branches: 
-    - 'schTi**'
+    - feature2_short_description
 
 jobs:
   build:
@@ -39,7 +39,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           message:  ${{ steps.fail.outputs.comment }}
-          branch: feature1_new_title
+          branch: feature2_short_description
         if: steps.test.outputs.result != '1'
       - name: PR Comment Success
         uses: Janealter/branch-pr-comment@v1
@@ -47,7 +47,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           message:  ${{ steps.success.outputs.comment }}
-          branch: schTi-update-workflows
+          branch: feature2_short_description
         if: steps.test.outputs.result == '1'
       - run: exit 1
         if: steps.test.outputs.result != '1'
