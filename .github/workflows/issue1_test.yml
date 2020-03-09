@@ -5,8 +5,8 @@ name: issue1_test
 
 on:
   pull_request:
-    branches: [ schTi-update-workflows ] #feature1_new_title
-    types: [edited]
+    branches: #feature1_new_title
+      - schTi-update-workflows
 
 jobs:
   build:
