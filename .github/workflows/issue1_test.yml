@@ -36,7 +36,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          message:  ${{ steps.test.outputs.result }}
+          message:  ${{ steps.fail.outputs.comment }}
           branch: schTi-update-workflows
         if: steps.test.outputs.result != '1'
       - run: exit 1
