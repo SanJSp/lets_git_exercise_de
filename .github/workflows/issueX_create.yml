@@ -20,6 +20,8 @@ jobs:
       id: branch
       shell: bash
       run: echo ::set-output name=name::$(echo ${GITHUB_REF#refs/heads/})
+    - name: test
+      run: echo ${{ steps.branch.outputs.name }}
     - name: Create issue 2
       if: steps.branch.outputs.name == 'feature1_new_title'
       uses: JasonEtco/create-an-issue@v2.3.1
