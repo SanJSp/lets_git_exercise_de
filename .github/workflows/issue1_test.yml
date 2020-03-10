@@ -9,12 +9,11 @@ on:
       - feature1_new_title
   pull_request:
     types: [ opened ]
-    branches:
-      - feature1_new_title
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    if: github.head_ref == 'feature1_new_title' || github.ref == 'refs/heads/feature1_new_title'
     strategy:
       matrix:
         python-version: [ '3.x' ]

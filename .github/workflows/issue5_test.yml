@@ -4,14 +4,17 @@
 name: issue5_test
 
 on:
-  pull_request:
+  push:
     branches: 
       - feature5_image
-  repository_dispatch:
+  pull_request:
+    types: [ opened ]
+
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    if: github.head_ref == 'feature5_image' || github.ref == 'refs/heads/feature5_image'
     strategy:
       matrix:
         python-version: [ '3.x' ]

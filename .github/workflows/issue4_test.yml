@@ -7,12 +7,13 @@ on:
   push:
     branches: 
       - feature4_quote 
-  repository_dispatch:
-    types: [start-test4]
+  pull_request:
+    types: [ opened ]
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    if: github.head_ref == 'feature4_quote' || github.ref == 'refs/heads/feature4_quote'
     strategy:
       matrix:
         python-version: [ '3.x' ]
