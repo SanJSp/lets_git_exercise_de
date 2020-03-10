@@ -8,7 +8,6 @@ on:
     branches: 
       - feature5_image
   repository_dispatch:
-    types: [start-test5]
 
 jobs:
   build:
