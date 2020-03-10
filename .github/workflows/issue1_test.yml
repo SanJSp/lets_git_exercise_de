@@ -7,6 +7,8 @@ on:
   push:
     branches:
       - feature1_new_title
+  repository_dispatch:
+    types: [start-test1]
 
 jobs:
   build:

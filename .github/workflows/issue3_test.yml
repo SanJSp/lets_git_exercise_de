@@ -7,6 +7,8 @@ on:
   push:
     branches: 
       - feature3_character_traits 
+  repository_dispatch:
+    types: [start-test3]
 
 jobs:
   build:

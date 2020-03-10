@@ -7,6 +7,8 @@ on:
   push:
     branches: 
       - feature4_quote 
+  repository_dispatch:
+    types: [start-test4]
 
 jobs:
   build:

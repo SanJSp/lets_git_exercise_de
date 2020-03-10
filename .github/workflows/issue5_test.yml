@@ -1,14 +1,14 @@
 # This workflow will install Python dependencies, run tests and lint with a single version of Python
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
 
-name: issue2_test
+name: issue5_test
 
 on:
-  push:
+  pull_request:
     branches: 
-      - feature2_short_description
+      - feature5_image
   repository_dispatch:
-    types: [start-test2]
+    types: [start-test5]
 
 jobs:
   build:
@@ -23,7 +23,7 @@ jobs:
         with:
           python-version: '3.x' # Version range or exact version of a Python version to use, using SemVer's version range syntax
           architecture: 'x64' # optional x64 or x86. Defaults to x64 if not specified
-      - run: python tests/Aufgabe2_test.py > test-output.txt
+      - run: python tests/Aufgabe5_test.py > test-output.txt
       - run: echo ::set-output name=result::$(grep "Yes" test-output.txt | wc -l)
         id: test
         shell: bash
@@ -31,7 +31,7 @@ jobs:
         id: fail
         shell: bash
         working-directory: ./.github/COMMENT_TEMPLATES
-      - run: echo ::set-output name=comment::$(< ./success.md)
+      - run: echo ::set-output name=comment::$(< ./lastSuccess.md)
         id: success
         shell: bash
         working-directory: ./.github/COMMENT_TEMPLATES
@@ -41,7 +41,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           message:  ${{ steps.fail.outputs.comment }}
-          branch: feature2_short_description
+          branch: feature5_image
         if: steps.test.outputs.result != '1'
       - name: PR Comment Success
         uses: Janealter/branch-pr-comment@v1
@@ -49,7 +49,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           message:  ${{ steps.success.outputs.comment }}
-          branch: feature2_short_description
+          branch: feature5_image
         if: steps.test.outputs.result == '1'
       - run: exit 1
         if: steps.test.outputs.result != '1'
