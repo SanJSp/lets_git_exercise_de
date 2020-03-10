@@ -1,28 +1,28 @@
 ---
 name: Aufgabe 3 Template
 about: Das dritte Issue, welches Aufgabe 3 abbildet
-title: Please add character traits
+title: Stichpunktliste zu Charackter einfügen
 labels: feature
 assignees: ''
 
 ---
 
-#### Description
-Every Character has some individual character traits. The visitor should be able to quickly see what is special about your character. Create a sub header followed by a list of about 3-10 character traits (e.g. loves chocolate cookies).
+#### Beschreibung
+Jeder Charackter hat seine individuellen Characktereigenschaften. Die Besucher sollten schnell erkennen können, was deinen charackter ausmacht. Erstelle deswegen einen Subheader der Größe H2 und beschreibe untendrunter deinen Charackter mit 3-10 Stichpunkten (z.B. liebt Schokokekse)
 
-#### Files
-If you need help, take a look at the cheat sheet.
+#### Dateien
+Falls du Hilfe brauchst, wirf einen Blick ins Cheatsheet. Wir möchten eine unordered List und einen Subheader der Größe H2.
 https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf
 
-#### Tasks
-Do these following steps:
-- [ ] Create a new Branch "feature3_character_traits"
-- [ ] Checkout the branch
-- [ ] Add a subheader (h2) to the index.md file using github flavoured markdown (see files if you need help)
-- [ ] Add a unordered list of 3-10 character traits
-- [ ] Commit your changes and push to origin
-- [ ] Create a pull request
-- [ ] If all tests succeed merge your changes into master, otherwise fix your changes so that the tests succeed.
-- [ ] Delete your feature branch
+#### Aufgaben
+Führe folgende Schritte aus:
+- [ ] Erstelle einen neuen Branch mit dem Namen "feature3_character_traits"
+- [ ] Checke diesen Branch aus
+- [ ] Füge einen Subheader (H2) der index.md Datei hinzu. Den Inhalt musst du selbst festlegen.
+- [ ] Füge untendrunter eine ungeordnete Liste mit 3-10 Stichpunkten über deinen Charackter ein
+- [ ] Führe einen Commit mit deinen Änderungen aus und pushe diese auf origin.
+- [ ] Erstelle einen Pull Request.
+- [ ] Sollten alle Tests bestanden worden sein, dann kannst du deine Änderungen in den Master Branch mergen. Falls die Tests fehlschlagen, schaue in die Kommentare des Pull Requests, um herauszufinden woran es lag. Behebe die Fehler, sodass die Tests positiv durchlaufen.
+- [ ] Lösche deinen Feature Branch
 
-If you have any questions, check out the Course Forum.
+Solltest du Fragen haben, kannst du einen Blick ins Kurs Forum werfen.

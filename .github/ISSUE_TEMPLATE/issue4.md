@@ -1,28 +1,26 @@
 ---
 name: Aufgabe 4 Template
 about: Das vierte Issue, welches Aufgabe 4 abbildet
-title: Please add character quote
+title: Charackter Zitat einfügen
 labels: feature
 assignees: ''
-
 ---
 
-#### Description
-What is loved about characters are not only their traits, but also what they've said. The quotes in books or movies are what sticks with us, therefore you shall add one to your page as well.
+#### Beschreibung
+Nicht nur die Eigenschafen von Charackteren sind wichtig, sondern auch die Sätze die sie gesagt haben. Um zu zeigen, wie besonders dein Charackter ist, sollst du dein Lieblingszitat deines Charackters hinzufügen.
 
-#### Files
-If you need help, take a look at the cheat sheet.
+#### Dateien
+Falls du Hilfe brauchst, wirf einen Blick ins Cheatsheet. Wir möchten eine Blockquote verwenden.
 https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf
 
-#### Tasks
-Do these following steps:
-- [ ] Create a new Branch "feature4_quote"
-- [ ] Checkout the branch
-- [ ] Add a subheader (h2) to the index.md file using github flavoured markdown (see files if you need help)
-- [ ] Add a quote from your character
-- [ ] Commit your changes and push to origin
-- [ ] Create a pull request
-- [ ] If all tests succeed merge your changes into master, otherwise fix your changes so that the tests succeed.
-- [ ] Delete your feature branch
+#### Aufgaben
+Führe folgende Schritte aus:
+- [ ] Erstelle einen neuen Branch mit dem Namen "feature4_quote"
+- [ ] Checke diesen Branch aus
+- [ ] Füge ein Zitat deines Charackters an das Ende der Seite ein. Schau gegebenenfalls ins Cheatsheet
+- [ ] Führe einen Commit mit deinen Änderungen aus und pushe diese auf origin.
+- [ ] Erstelle einen Pull Request.
+- [ ] Sollten alle Tests bestanden worden sein, dann kannst du deine Änderungen in den Master Branch mergen. Falls die Tests fehlschlagen, schaue in die Kommentare des Pull Requests, um herauszufinden woran es lag. Behebe die Fehler, sodass die Tests positiv durchlaufen.
+- [ ] Lösche deinen Feature Branch
 
-If you have any questions, check out the Course Forum.
+Solltest du Fragen haben, kannst du einen Blick ins Kurs Forum werfen.
