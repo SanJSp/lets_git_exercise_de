@@ -21,7 +21,7 @@ jobs:
       run: echo "##[set-output name=name;]$(echo ${GITHUB_REF#refs/heads/})"
       id: branch
     - name: Create issue 2
-      if: ${{ steps.branch.outputs.name }} == 'feature1_new_title'
+      if: steps.branch.outputs.name == 'feature1_new_title'
       uses: JasonEtco/create-an-issue@v2.3.1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -29,7 +29,7 @@ jobs:
         # The name of the file to use as the issue template
         filename: .github/ISSUE_TEMPLATE/issue2.md
     - name: Create issue 3
-      if: ${{ steps.branch.outputs.name }} == 'feature2_short_description'
+      if: steps.branch.outputs.name == 'feature2_short_description'
       uses: JasonEtco/create-an-issue@v2.3.1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -37,7 +37,7 @@ jobs:
         # The name of the file to use as the issue template
         filename: .github/ISSUE_TEMPLATE/issue3.md
     - name: Create issue 4
-      if: ${{ steps.branch.outputs.name }} == 'feature3_character_traits' 
+      if: steps.branch.outputs.name == 'feature3_character_traits' 
       uses: JasonEtco/create-an-issue@v2.3.1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -45,7 +45,7 @@ jobs:
         # The name of the file to use as the issue template
         filename: .github/ISSUE_TEMPLATE/issue4.md
     - name: Create issue 5
-      if: ${{ steps.branch.outputs.name }} == 'feature4_quote'
+      if: steps.branch.outputs.name == 'feature4_quote'
       uses: JasonEtco/create-an-issue@v2.3.1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
