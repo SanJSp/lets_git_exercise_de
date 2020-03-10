@@ -19,7 +19,7 @@ jobs:
     - name: Extract branch name
       id: branch
       shell: bash
-      run: echo ::set-output name=name::$(echo ${GITHUB_REF#refs/heads/})"
+      run: echo ::set-output name=name::$(echo ${GITHUB_REF#refs/heads/})
     - name: Create issue 2
       if: steps.branch.outputs.name == 'feature1_new_title'
       uses: JasonEtco/create-an-issue@v2.3.1
