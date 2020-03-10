@@ -17,9 +17,9 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
     - name: Extract branch name
-      shell: bash
-      run: echo "##[set-output name=name;]$(echo ${GITHUB_REF#refs/heads/})"
       id: branch
+      shell: bash
+      run: echo ::set-output name=name::$(echo ${GITHUB_REF#refs/heads/})"
     - name: Create issue 2
       if: steps.branch.outputs.name == 'feature1_new_title'
       uses: JasonEtco/create-an-issue@v2.3.1
