@@ -7,24 +7,24 @@ cwd = dirname(os.getcwd())
 directory = './index.md'
 
 
-def check_if_string_in_file(file_name):
-	heading = False
+def check_if_string_in_file(file_name, string_to_search):
 	count = 0
+	heading = False
 	f = open(file_name, 'r')
 	Lines = f.readlines() 
+	regEx = string_to_search + '\s?([A-Z]|[a-z])+'
 	for line in Lines:
-		if re.match('## ([A-Z]|[a-z])+', line):
+		if re.match(regEx, line) and (count == 1):
 			heading = True
-			continue
-		if (heading == True) and re.findall('\* ([A-Z]|[a-z])+', line):
+		elif re.match(regEx, line):
 			count = count + 1
-		if (heading == True) and re.findall('\* ([A-Z]|[a-z])+', line) and (count > 2):
+		if re.findall('>\s?([A-Z]|[a-z])+', line) and (heading == True):
 			return True
 	f.close()
 	return False
 
 
-if check_if_string_in_file(directory):
+if check_if_string_in_file(directory, '##'):
    print('Yes')
 else:
    print('No')

@@ -7,21 +7,16 @@ cwd = dirname(os.getcwd())
 directory = './index.md'
 
 
-def check_if_string_in_file(file_name, string_to_search):
-	count = 0
+def check_if_string_in_file(file_name):
 	f = open(file_name, 'r')
 	Lines = f.readlines() 
-	regEx = string_to_search + '([A-Z]|[a-z])+'
 	for line in Lines:
-		if re.match(regEx, line) and (count == 1):
+		if re.match('<img ([A-Z]|[a-z])+', line):
 			return True
-		elif re.match(regEx, line):
-			count = count + 1
 	f.close()
 	return False
 
-
-if check_if_string_in_file(directory, '## '):
+if check_if_string_in_file(directory):
    print('Yes')
 else:
    print('No')
