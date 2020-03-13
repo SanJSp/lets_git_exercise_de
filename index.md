@@ -1,1 +1,1 @@
-Hier entsteht gerade ein Webseite über meinen lieblingscharakter!
+Hier entsteht gerade ein Webseite über meinen Lieblingscharakter!
