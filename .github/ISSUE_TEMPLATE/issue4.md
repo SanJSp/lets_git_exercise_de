@@ -20,7 +20,7 @@ Führe folgende Schritte aus:
 - [ ] Füge ein Zitat deines Charakters an das Ende der Seite ein. Schau gegebenenfalls ins Cheatsheet
 - [ ] Führe einen Commit mit deinen Änderungen aus und pushe diese.
 - [ ] Erstelle einen Pull Request.
-- [ ] Sollten alle Tests bestanden worden sein, dann kannst du deine Änderungen in den Master Branch mergen. Falls die Tests fehlschlagen, schaue in die Kommentare des Pull Requests, um herauszufinden woran es lag. Behebe die Fehler, sodass die Tests positiv durchlaufen. Eine gute Idee ist es die Schritte des Issues erneut zu durchlaufen und zu schauen, ob alles richtig geschrieben ist. Wenn du es für 15 Minuten ohne Erfolg nicht hingekriegt hast, kannst du in das Kursforum schauen.
+- [ ] Sollten alle Tests bestanden worden sein, dann kannst du deine Änderungen in den Master Branch mergen. Falls die Tests fehlschlagen, schaue in die Kommentare des Pull Requests, um herauszufinden woran es lag. Behebe die Fehler, sodass die Tests positiv durchlaufen. Eine gute Idee ist es die Schritte des Issues erneut zu durchlaufen und zu schauen, ob alles richtig geschrieben ist. Außerdem kannst du dir die Index.md Datei auf Github anschauen und die richtige Formattierung überprüfen. Wenn du es für 15 Minuten ohne Erfolg nicht hingekriegt hast, kannst du in das Kursforum schauen.
 - [ ] Lösche deinen Feature Branch, wechsel auf master und bringe dein Repository auf den neuesten Stand.
 - [ ] Betrachte deine Webseite und schau, ob sich etwas verändert hat. Gegebenenfalls musst du ein paar Mal die Seite aktualisieren.
 
