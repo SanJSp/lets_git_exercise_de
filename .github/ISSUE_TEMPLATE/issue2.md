@@ -23,5 +23,6 @@ In diesem Issue erhältst du weniger Hilfestellung als im ersten. Falls du nicht
 - [ ] Erstelle einen Pull Request. In diesem sollst du am Ende noch dein Issue referenzieren. Dafür schreibst du am Ende ```Fixes: # ``` und wählst dann aus der Liste das Issue aus.
 - [ ] Sollten alle Tests bestanden worden sein, dann kannst du deine Änderungen in den Master Branch mergen. Falls die Tests fehlschlagen, schaue in die Kommentare des Pull Requests, um herauszufinden woran es lag. Behebe die Fehler, sodass die Tests positiv durchlaufen. Eine gute Idee ist es die Schritte des Issues erneut zu durchlaufen und zu schauen, ob alles richtig geschrieben ist. Wenn du es für 15 Minuten ohne Erfolg nicht hingekriegt hast, kannst du in das Kursforum schauen.
 - [ ] Lösche deinen Feature Branch. Wechsle auf den Master Branch und bringe dein Repository auf den neuesten Stand.
+- [ ] Betrachte deine Webseite und schau, ob sich etwas verändert hat. Gegebenenfalls musst du ein paar Mal die Seite aktualisieren.
 
 Solltest du Fragen haben, kannst du einen Blick ins Kurs Forum werfen.
