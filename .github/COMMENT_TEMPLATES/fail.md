@@ -1,1 +1,1 @@
-❌ The tests were not successful. Just have a look at your changes, maybe you can find the mistake. Commit if you think you fixed it. Keep it up 🔥.
+❌ ❌ ❌  Die Tests waren leider nicht erfolgreich. Schau nochmal auf deine Änderungen, vielleicht erkennst du von selbst wo der Fehler ist. Auch googlen ist eine valide Option. Solltest du nach mehr als 15 Minuten immer noch keine Lösung gefunden haben, dann kannst du gerne im Kursforum nachfragen. Bleib dran! 🔥.
