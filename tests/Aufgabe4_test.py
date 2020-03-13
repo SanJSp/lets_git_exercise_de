@@ -8,17 +8,11 @@ directory = './index.md'
 
 
 def check_if_string_in_file(file_name, string_to_search):
-	count = 0
-	heading = False
 	f = open(file_name, 'r')
 	Lines = f.readlines() 
 	regEx = string_to_search + '\s?([A-Z]|[a-z])+'
 	for line in Lines:
-		if re.match(regEx, line) and (count == 1):
-			heading = True
-		elif re.match(regEx, line):
-			count = count + 1
-		if re.findall('>\s?([A-Z]|[a-z])+', line) and (heading == True):
+		if re.findall('>\s?([A-Z]|[a-z])+', line):
 			return True
 	f.close()
 	return False
