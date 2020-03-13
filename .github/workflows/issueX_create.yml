@@ -17,39 +17,39 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
     - name: Extract branch name
-      shell: bash
-      run: echo "##[set-output name=name;]$(echo ${GITHUB_REF#refs/heads/})"
       id: branch
+      shell: bash
+      run: echo ::set-output name=name::$(echo ${GITHUB_HEAD_REF#refs/heads/})
     - name: Create issue 2
+      if: steps.branch.outputs.name == 'feature1_new_title'
       uses: JasonEtco/create-an-issue@v2.3.1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         # The name of the file to use as the issue template
         filename: .github/ISSUE_TEMPLATE/issue2.md
-      if: ${{ steps.branch.outputs.name }} == "feature1_new_title"
     - name: Create issue 3
+      if: steps.branch.outputs.name == 'feature2_short_description'
       uses: JasonEtco/create-an-issue@v2.3.1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         # The name of the file to use as the issue template
         filename: .github/ISSUE_TEMPLATE/issue3.md
-      if: ${{ steps.branch.outputs.name }} == "feature2_short_description"
     - name: Create issue 4
+      if: steps.branch.outputs.name == 'feature3_character_traits' 
       uses: JasonEtco/create-an-issue@v2.3.1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         # The name of the file to use as the issue template
         filename: .github/ISSUE_TEMPLATE/issue4.md
-      if: ${{ steps.branch.outputs.name }} == "feature3_character_traits"    
     - name: Create issue 5
+      if: steps.branch.outputs.name == 'feature4_quote'
       uses: JasonEtco/create-an-issue@v2.3.1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         # The name of the file to use as the issue template
-        filename: .github/ISSUE_TEMPLATE/issue5.md
-      if: ${{ steps.branch.outputs.name }} == "feature4_quote"  
+        filename: .github/ISSUE_TEMPLATE/issue5.md  
    
