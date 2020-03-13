@@ -18,7 +18,7 @@ https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf
 Führe folgende Schritte aus:
 - [ ] Erstelle einen neuen Branch mit dem Namen ```feature1_new_title```. Dafür verwendest du den Befehl git branch feature1_new_title
 - [ ] Wechsle auf den erstellten Branch mit dem Befehl ```git checkout feature1_new_title```
-- [ ] Navigiere in der Git Bash zu deinem Repository. Das sollte durch den Befehl ```cd \<dein github name\>.github.io klappen.```
+- [ ] Navigiere in der Git Bash zu deinem Repository. Das sollte durch den Befehl ```cd \<dein github name\>.github.io``` klappen.
 - [ ] Nun wollen wir das Repository im Explorer öffnen. Navigiere einfach zum Ordner, worin dein Repository geclont wurde. Oder nutze unsere coolen Abkürzungen. Dafür gibtst du in der Git Bash unter Windows den Befehl ```explorer.exe .``` ein. Unter Linux gibst du den Befehl ```nautilus ./```. 
 - [ ] Nun sollst du den Titel zu der Webseite hinzufügen. Öffne dafür die index.md Datei mit einem Editor. Lösche, was bereits in der Datei steht und nutze Github flavoured Markdown, um einen Titel zu der Website hinzuzufügen. Falls du nicht weißt wie, schau mal in das Cheatsheet.
 - [ ] Nachdem du den Titel hinzugefügt hast, musst du die index.md Datei speichern. Füge dann in der Git Bash die datei index.md der Staging Area hinzu. Das machst du mit dem Befehl git add index.md. Anschließend musst du die Veränderungen commiten. Führe einen Commit mit dem Befehl ```git commit -m „Added Title“``` aus. Pushe dann die Veränderungen mit dem Befehl ```git push```. Dabei wird vielleicht ein Fehler auftreten. Kopiere einfach den Befehl aus der Fehlermeldung und führe diesen aus.
