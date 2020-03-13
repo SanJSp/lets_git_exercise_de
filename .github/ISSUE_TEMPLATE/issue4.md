@@ -21,6 +21,6 @@ Führe folgende Schritte aus:
 - [ ] Führe einen Commit mit deinen Änderungen aus und pushe diese.
 - [ ] Erstelle einen Pull Request.
 - [ ] Sollten alle Tests bestanden worden sein, dann kannst du deine Änderungen in den Master Branch mergen. Falls die Tests fehlschlagen, schaue in die Kommentare des Pull Requests, um herauszufinden woran es lag. Behebe die Fehler, sodass die Tests positiv durchlaufen. Eine gute Idee ist es die Schritte des Issues erneut zu durchlaufen und zu schauen, ob alles richtig geschrieben ist. Wenn du es für 15 Minuten ohne Erfolg nicht hingekriegt hast, kannst du in das Kursforum schauen.
-- [ ] Lösche deinen Feature Branch, wechsle auf master und bringe dein Repository auf den neuesten Stand.
+- [ ] Lösche deinen Feature Branch, wechsel auf master und bringe dein Repository auf den neuesten Stand.
 
 Solltest du Fragen haben, kannst du einen Blick ins Kurs Forum werfen.
