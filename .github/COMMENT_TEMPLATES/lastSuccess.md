@@ -1,1 +1,1 @@
-Well done! You successfully finished this exercise. Now you have seen how workflows at GitHub are working. See you in the next course video.
+🥳 Herzlichen Glückwunsch!!! Damit hast du auch den letzten Teil unserer Übung erfolgreich absolviert. Wir hoffen du hattest Spaß dabei und konntest ein bisschen darüber lernen, wie man mit GitHub arbeitet. Viel Erfolg bei deinen weiteren Projekten mit GitHub! Wir sehen uns im nächsten Kursvideo. 🤩
