@@ -24,6 +24,9 @@ jobs:
         with:
           python-version: '3.x' # Version range or exact version of a Python version to use, using SemVer's version range syntax
           architecture: 'x64' # optional x64 or x86. Defaults to x64 if not specified
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '10.x'
       - run: python tests/Aufgabe3_test.py > test-output.txt
       - run: echo ::set-output name=result::$(grep "Yes" test-output.txt | wc -l)
         id: test
@@ -50,6 +53,18 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           message:  ${{ steps.success.outputs.comment }}
+          branch: feature3_character_traits
+        if: steps.test.outputs.result == '1'
+      - run: node ./.github/misc/answers.js 3 > answer.txt
+      - run: echo ::set-output name=answer::$(< answer.txt)
+        id: answer
+        shell: bash
+      - name: PR Comment Success
+        uses: Janealter/branch-pr-comment@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          message:  ${{ steps.answer.outputs.answer }}
           branch: feature3_character_traits
         if: steps.test.outputs.result == '1'
       - run: exit 1
