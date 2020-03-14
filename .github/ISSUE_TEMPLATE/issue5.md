@@ -20,7 +20,7 @@ Führe folgende Schritte aus:
 - [ ] Checke diesen Branch aus
 - [ ] Suche auf der Suchmaschine deiner Wahl nach einem Bild deines Charackters, welches dir besonders gut gefällt. Ermittle den Link dieses Bildes, indem du auf "Datei anzeigen" oder auf das Bild klickst.
 - [ ] Füge das Bild am Ende deiner Webseite ein, indem du den HTML-Ausdruck  \<img src="URL" \/> verwendest. Ersetze hierfür die URL mit dem Link zu deinem Bild.
-- [ ] Führe einen Commit mit deinen Änderungen aus und pushe diese auf origin.
+- [ ] Führe einen Commit mit deinen Änderungen aus und pushe diese.
 - [ ] Erstelle einen Pull Request.
 - [ ] Sollten alle Tests bestanden worden sein, dann kannst du deine Änderungen in den Master Branch mergen. Falls die Tests fehlschlagen, schaue in die Kommentare des Pull Requests, um herauszufinden woran es lag. Behebe die Fehler, sodass die Tests positiv durchlaufen. Eine gute Idee ist es die Schritte des Issues erneut zu durchlaufen und zu schauen, ob alles richtig geschrieben ist. Außerdem kannst du dir die Index.md Datei auf Github anschauen und die richtige Formattierung überprüfen. Wenn du es für 15 Minuten ohne Erfolg nicht hingekriegt hast, kannst du in das Kursforum schauen.
 - [ ] Lösche deinen Feature Branch, wechsel auf master und bringe dein Repository auf den neuesten Stand.
