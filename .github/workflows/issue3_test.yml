@@ -7,6 +7,8 @@ on:
   push:
     branches: 
       - feature3_character_traits 
+  pull_request:
+    types: [ opened ]
 
 jobs:
   build:
