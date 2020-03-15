@@ -7,6 +7,8 @@ on:
   push:
     branches: 
       - feature5_image
+  pull_request:
+    types: [ opened ]
 
 jobs:
   build:
