@@ -16,7 +16,7 @@ https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf
 
 #### Aufgaben
 Führe folgende Schritte aus:
-- [ ] Erstelle einen neuen Branch mit dem Namen "feature5_image"
+- [ ] Erstelle einen neuen Branch mit dem Namen ```feature5_image```
 - [ ] Checke diesen Branch aus
 - [ ] Suche auf der Suchmaschine deiner Wahl nach einem Bild deines Charackters, welches dir besonders gut gefällt. Ermittle den Link dieses Bildes, indem du auf "Datei anzeigen" oder auf das Bild klickst und dann die Adresse aus der Adressleiste des Browser kopierst.
 - [ ] Füge das Bild am Ende deiner Webseite ein, indem du den HTML-Ausdruck ```<img src="URL"/>``` verwendest. Ersetze hierfür die URL mit dem Link zu deinem Bild.
