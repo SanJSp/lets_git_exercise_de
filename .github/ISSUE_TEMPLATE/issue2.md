@@ -16,7 +16,7 @@ https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf
 
 #### Aufgaben
 In diesem Issue erhältst du weniger Hilfestellung als im ersten. Falls du nicht weiterkommst, kannst du auch in das erste Issue auf der Issue Seite (unter Closed) reinschauen. Führe folgende Schritte aus:
-- [ ] Erstelle einen neuen Branch mit dem Namen "feature2_short_description"
+- [ ] Erstelle einen neuen Branch mit dem Namen ```feature2_short_description```
 - [ ] Wechsle auf diesen Branch
 - [ ] Füge unter den Titel eine Beschreibung deines Charakters (~30-50 Wörter) zur index.md Datei hinzu. Hierfür sollst du Klartext schreiben, also ohne besondere Formattierungen oder Github Flavoured Markdown.
 - [ ] Führe einen Commit mit deinen Änderungen aus und pushe.
