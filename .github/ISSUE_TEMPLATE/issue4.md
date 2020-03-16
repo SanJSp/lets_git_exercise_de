@@ -15,7 +15,7 @@ https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf
 
 #### Aufgaben
 Führe folgende Schritte aus:
-- [ ] Erstelle einen neuen Branch mit dem Namen "feature4_quote"
+- [ ] Erstelle einen neuen Branch mit dem Namen ```feature4_quote```
 - [ ] Checke diesen Branch aus
 - [ ] Füge ein Zitat deines Charakters an das Ende der Seite ein. Schau gegebenenfalls ins Cheatsheet
 - [ ] Führe einen Commit mit deinen Änderungen aus und pushe diese.
