@@ -16,7 +16,7 @@ https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf
 
 #### Aufgaben
 Führe folgende Schritte aus:
-- [ ] Erstelle einen neuen Branch mit dem Namen ```feature1_new_title```. Dafür verwendest du den Befehl git branch feature1_new_title
+- [ ] Erstelle einen neuen Branch mit dem Namen ```feature1_new_title```. Dafür verwendest du den Befehl ```git branch feature1_new_title```
 - [ ] Wechsle auf den erstellten Branch mit dem Befehl ```git checkout feature1_new_title```
 - [ ] Navigiere in der Git Bash zu deinem Repository. Das sollte durch den Befehl ```cd \<dein github name\>.github.io``` klappen.
 - [ ] Nun wollen wir das Repository im Explorer (oder einem anderen Programm, welches Ordner anzeigen kann) öffnen. Navigiere dafür einfach zum Ordner, worin dein Repository geclont wurde. Als Hilfe kannst du auch unsere Shortcuts probieren: Dafür gibtst du in der Git Bash unter Windows den Befehl ```explorer.exe .``` ein. Unter Linux gibst du den Befehl ```nautilus ./``` ein. 
