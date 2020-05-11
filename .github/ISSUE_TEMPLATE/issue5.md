@@ -11,7 +11,7 @@ assignees: ''
 Die Besucher deiner Seite haben jetzt schon einen guten Eindruck von deinem Charackter. Noch besser ist es, deinen Charackter bildlich darzustellen. Dafür sollst du ein Bild deines Charackters hinzufügen. Wähle dafür ein horizontales Bild aus dem Internet.
 
 #### Dateien
-Falls du Hilfe brauchst, wirf einen Blick ins Cheatsheet. Wir möchten eine Blockquote verwenden.
+Falls du Hilfe brauchst, wirf einen Blick ins Cheatsheet.
 https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf
 
 #### Aufgaben
@@ -27,6 +27,3 @@ Führe folgende Schritte aus:
 - [ ] Betrachte deine Webseite und schau, ob sich etwas verändert hat. Gegebenenfalls musst du ein paar Mal die Seite aktualisieren.
 
 Solltest du Fragen haben, kannst du einen Blick ins Kurs Forum werfen.
-
-
-
