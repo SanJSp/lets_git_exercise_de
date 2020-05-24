@@ -5,7 +5,7 @@ In dieser Hausaufgabe wirst du eine Webseite zu deinem Lieblingscharakter aus Fi
 
 - [ ] Nutze dieses Reposiory als Vorlage für ein neues Repository und klicke auf „Use this template“, um das selbe Repository in deinen Repositories zu erstellen. Gib dem Repository beim erstellen den Namen „\<dein github name\>.github.io“. Wenn dein Username zum Beispiel sanjsp ist, sollte das Repository sanjsp.github.io heißen
 - [ ] Gib dem neu erstellten Repository einen Stern.
-- [ ] Clone das Repository auf deinen Computer. Dafür gehst du oben in der Leiste auf Clone or Download und kopierst den Link des Repositories. Dann führst du in der Git Bash ```git clone (URL des Repositories)``` aus.
+- [ ] Clone das Repository auf deinen Computer. Dafür gehst du oben in der Leiste auf Clone or Download und kopierst den Link des Repositories. Dann führst du in der Git Bash ```git clone (URL des Repositories)``` aus.  Meine Eingabe sähe wie folgt aus: ```git clone https://github.com/SanJSp/sanjsp.github.io.git```
 - [ ] Öffne die Webseite des Repositories, indem du im Brwoser auf  \<dein github name\>.github.io gehst.
 - [ ] Mit der Zeit werden in deinem Repository neue Issues erscheinen. Bearbeite diese und folge den Schritten, die in den Issues angegeben sind. Es kann manchmal ein wenig dauern (max. 5 Minuten), bis die Issues erstellt werden.
 
