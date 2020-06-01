@@ -11,7 +11,7 @@ assignees: ''
 Wenn Besucher auf deine Website kommen, dann wissen sie im Moment nicht, worum es geht, da auf der Website keine Informationen über deinen Charackter zu sehen sind. Du solltest einen Titel hinzufügen, sodass die Besucher verstehen, um welchen Charakter es sich auf dieser Webseite handelt.
 
 #### Dateien
-Wenn du nicht weißt, wie man einen Titel erstellt, schau mal auf dieses Cheatsheet unter Header. Du sollst einen H1 Header verwenden. Bedenke, dass Markdown Symbole häufig von einem Leerzeichen gefolgt sind, um korrekt zu rendern.
+Wenn du nicht weißt, wie man einen Titel erstellt, schau mal auf dieses Cheatsheet unter Header. Du sollst einen H1 Header verwenden. Bedenke, dass Markdown Symbole häufig von einem Leerzeichen gefolgt werden, um korrekt zu rendern.
 https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf
 
 #### Aufgaben
