@@ -1,7 +1,9 @@
 # Let's Git - Versionsverwaltung & Open Source Hausaufgabe
 Herzlich Willkommen zu dieser Hausaufgabe für unseren MOOC: Let's Git! Wir hoffen, dass Du viel lernen wirst und dabei auch Spaß hast.
 
-In dieser Hausaufgabe wirst du eine Webseite zu deinem Lieblingscharakter aus Filmen oder Büchern erstellen. Hier kannst du zwei Beispiele betrachten: [Beispiel 1](https://sanjsp.github.io/) und [Beispiel 2](https://emski99.github.io/) Um die Aufgabe zu starten, folge einfach folgenden Schritten:
+In dieser Hausaufgabe wirst du eine Webseite zu deinem Lieblingscharakter aus Filmen oder Büchern erstellen. Hier kannst du zwei Beispiele betrachten: [Beispiel 1](https://sanjsp.github.io/) und [Beispiel 2](https://emski99.github.io/).
+
+Um die Aufgabe zu starten, folge einfach folgenden Schritten:
 
 - [ ] Nutze dieses Repository als Vorlage für ein neues Repository und klicke auf „Use this template“, um das selbe Repository in deinen Repositories zu erstellen. Gib dem Repository beim Erstellen den Namen „\<dein github name\>.github.io“. Wenn dein Username zum Beispiel sanjsp ist, sollte das Repository sanjsp.github.io heißen
 - [ ] Gib dem neu erstellten Repository einen Stern. Falls du keinen Stern geben kannst, solltest du überprüfen, ob deine mit deinem GitHub Account verknüpfte Email Adresse verifiziert ist. Das kannst du bei den Einstellungen nachschauen.
