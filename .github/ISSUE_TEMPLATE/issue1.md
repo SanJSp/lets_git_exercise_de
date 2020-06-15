@@ -17,7 +17,7 @@ https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf
 #### Aufgaben
 Führe folgende Schritte aus:
 - [ ] Navigiere in der Git Bash/im Terminal zu deinem Repository. Das sollte durch den Befehl ```cd \<dein github name\>.github.io``` klappen.
-- [ ] Erstelle einen neuen Branch mit dem Namen ```feature1_new_title```. Dafür verwendest du den Befehl ```git branch feature1_new_title```. Achte darauf, dass der Branch wirklich so heißt, sonst können wir deine Änderungen nicht korrigieren.
+- [ ] Da wir hier den Github Flow verwenden wollen, sollst du einen neuen Branch mit dem Namen ```feature1_new_title``` erstellen. Dafür verwendest du den Befehl ```git branch feature1_new_title```. Achte darauf, dass der Branch wirklich so heißt, sonst können wir deine Änderungen nicht korrigieren.
 - [ ] Wechsle auf den erstellten Branch mit dem Befehl ```git checkout feature1_new_title```
 - [ ] Nun wollen wir das Repository im Explorer (oder einem anderen Programm, welches Ordner anzeigen kann) öffnen. Navigiere dafür einfach zum Ordner, worin dein Repository geclont wurde. Als Hilfe kannst du auch unsere Shortcuts probieren: Dafür gibtst du in der Git Bash unter Windows den Befehl ```explorer.exe .``` ein. Unter Linux gibst du den Befehl ```nautilus .``` ein. Als Mac User kannst du den Befehl ```open .```verwenden
 - [ ] Nun sollst du den Titel zu der Webseite hinzufügen. Öffne dafür die index.md Datei mit einem Editor. Lösche alles, was bereits in der Datei steht und nutze Github flavoured Markdown, um einen Titel zu der Website hinzuzufügen. Falls du nicht weißt wie, schau in das Cheatsheet.
