@@ -1,7 +1,7 @@
 # Let's Git - Versionsverwaltung & Open Source Hausaufgabe
 Herzlich Willkommen zu dieser Hausaufgabe für unseren MOOC: Let's Git! Wir hoffen, dass Du viel lernen wirst und dabei auch Spaß hast.
 
-In dieser Hausaufgabe wirst du eine Webseite zu deinem Lieblingscharakter aus Filmen oder Büchern erstellen. Hier kannst du zwei Beispiele betrachten: [Beispiel 1](https://sanjsp.github.io/) und [Beispiel 2](https://emski99.github.io/).
+In dieser Hausaufgabe wirst du eine Webseite zu deinem Lieblingscharakter aus Filmen oder Büchern erstellen. Hier kannst du zwei Beispiele betrachten: [Beispiel 1](https://sanjsp.github.io/) und [Beispiel 2](https://emski99.github.io/). Du wirst hier den Github Flow üben, aber das wirst du dann in den Aufgaben erkennen.
 
 Um die Aufgabe zu starten, folge einfach folgenden Schritten:
 
