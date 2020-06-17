@@ -8,7 +8,7 @@ assignees: ''
 ---
 
 #### Beschreibung
-Die Besucher deiner Seite haben jetzt schon einen guten Eindruck von deinem Charakter. Noch besser ist es, deinen Charakter bildlich darzustellen. Dafür sollst du ein Bild deines Charakters hinzufügen. Wähle dafür ein horizontales Bild aus dem Internet.
+Die Besucher deiner Seite haben jetzt schon einen guten Eindruck von deinem Charakter. Noch besser ist es, deinen Charakter bildlich darzustellen. Dafür sollst du ein Bild deines Charakters hinzufügen. Wähle dafür ein Bild aus dem Internet.
 
 #### Aufgaben
 Führe folgende Schritte aus:
