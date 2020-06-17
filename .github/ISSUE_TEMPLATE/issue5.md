@@ -14,7 +14,7 @@ Die Besucher deiner Seite haben jetzt schon einen guten Eindruck von deinem Char
 Führe folgende Schritte aus:
 - [ ] Erstelle einen neuen Branch mit dem Namen ```feature5_image```
 - [ ] Checke diesen Branch aus
-- [ ] Suche auf der Suchmaschine deiner Wahl nach einem Bild deines Charakters, welches dir besonders gut gefällt. Ermittle den Link dieses Bildes, indem du auf "Datei anzeigen" oder auf das Bild rechts-klickst, Bild anzeigen auswählst und dann die Adresse aus der Adressleiste des Browsers kopierst.
+- [ ] Suche auf der Suchmaschine deiner Wahl nach einem Bild deines Charakters, welches dir besonders gut gefällt. Stelle sicher, dass das die Lizenz des Bildes Dir erlaubt, dieses privat zu verwenden. Ermittle den Link dieses Bildes, indem du auf "Datei anzeigen" oder auf das Bild rechts-klickst, Bild anzeigen auswählst und dann die Adresse aus der Adressleiste des Browsers kopierst.
 - [ ] Füge das Bild am Ende deiner Webseite ein, indem du den HTML-Ausdruck ```<img src="URL"/>``` verwendest. Ersetze hierfür die URL mit dem Link zu deinem Bild. Das Cheatsheet enthält auch eine Möglichkeit Bilder einzufügen, wir wollen aber, dass du den HTML-Ausdruck nutzt.
 - [ ] Führe einen Commit mit deinen Änderungen aus und pushe diese.
 - [ ] Erstelle einen Pull Request.
