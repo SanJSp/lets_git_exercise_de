@@ -11,14 +11,14 @@ def check_if_string_in_file(file_name):
 	heading = False
 	count = 0
 	f = open(file_name, 'r')
-	Lines = f.readlines() 
+	Lines = f.readlines()
 	for line in Lines:
-		if re.match('## ([A-Z]|[a-z])+', line):
+		if re.match('## ([A-Z]|[a-z]|[\u00c4-\u02AF]|[0-9])+', line):
 			heading = True
 			continue
-		if (heading == True) and re.findall('\* ([A-Z]|[a-z])+', line):
+		if (heading == True) and re.findall('\* ([A-Z]|[a-z]|[\u00c4-\u02AF]|[0-9])+', line):
 			count = count + 1
-		if (heading == True) and re.findall('\* ([A-Z]|[a-z])+', line) and (count > 2):
+		if (heading == True) and re.findall('\* ([A-Z]|[a-z]|[\u00c4-\u02AF]|[0-9])+', line) and (count > 2):
 			return True
 	f.close()
 	return False
