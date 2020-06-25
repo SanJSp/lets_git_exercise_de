@@ -11,7 +11,7 @@ def check_if_string_in_file(file_name):
 	f = open(file_name, 'r')
 	Lines = f.readlines()
 	for line in Lines:
-		if re.match('<img ([A-Z]|[a-z]|[0-9])+', line):
+		if re.match('<img([\w\W][^\>]+?)\/>', line):
 			return True
 	f.close()
 	return False
